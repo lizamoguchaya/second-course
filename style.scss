@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.center { 
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.header { 
+    background-image: url(img/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.title { 
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 217px;
+    width: 788px;
+    padding-left: 120px;
+}
+.info { 
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; 
+    width: 421px;
+    padding-top: 32px;
+    padding-bottom: 44px;
+    padding-left: 120px;
+   
+}
+.bold { 
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-decoration-line: none;
+}
+.button { 
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    margin-left: 120px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 493px;
+    border: none;
+}
+
+.button:hover { 
+    background-color:#EB443F; ;
+}
+.footer { 
+    background-color:#000915; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    
+}
+.for_item{
+    background-image: url(img/Rectangle\ 6.jpg);
+    width: 379px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+ 
+}
+.for_item:hover{
+    border: 3px solid #44D2FF;
+}
+.for_item_2 { 
+    background-image: url(img/Rectangle\ 7.jpg);
+    width: 379px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+
+}
+.for_item_2:hover {
+    border: 3px solid #44D2FF;
+}
+.for_item_3{
+    background-image: url(img/Rectangle\ 8.jpg);
+    width: 379px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+.for_item_3:hover {
+    border: 3px solid #44D2FF;
+}
+.for_item_text { 
+    padding-top: 236px;
+    padding-left: 32px;;
+}
+.first_game {
+    background-color:#000915; 
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.first_game_img {
+    padding-top: 282px;
+    padding-right: 120px;
+}
+.first_game_box{
+    width: 584px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.first_game_name {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 282px;
+    padding-left: 120px;
+}
+.first_game_start {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    padding-left: 120px;
+}
+.first_game_button { 
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #9C0332;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 120px;
+}
+
+.second_game {
+    background: #000915;
+    width: 1440px;
+    height: 800px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.second_game_name {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.second_game_start { 
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    width: 599px;
+    padding-right: 120px;
+}
+.second_game_img {
+    padding-left: 120px;
+}
+.second_game_button { 
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #9C0332;
+    border: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.second_game_box { 
+    width: 584px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+@import 'mobile'
