@@ -16,3 +16,20 @@ function gameSeasons() {
    seasons(monthNumber);
 } 
 
+function gameWords() {
+    let array = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    array = array.sort(() => Math.random() - 0.5);
+    alert(array);
+    let word1 = prompt ('Каким было первое слово?');
+    let word2 = prompt ('Каким было второе слово?');
+    
+    if (word1 === array[0] && word2 === array[6]) {
+        alert('Вы угадали');
+    } else if (word1 === array[0] || word2 === array[6]) {
+        alert('Вы были близки к победе');
+    } else{
+        alert('Ответ не верный');
+    }
+    
+}
+

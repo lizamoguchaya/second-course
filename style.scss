@@ -189,6 +189,7 @@
     flex-shrink: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .second_game_name {
     color: #FFF;
@@ -205,7 +206,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 32px;
-    width: 599px;
+    width: 584px;
     padding-right: 120px;
 }
 .second_game_img {
