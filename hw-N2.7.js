@@ -53,9 +53,15 @@ console.log(RandomInt(1, 10));
 
 // 6. Напишите функцию, которая будет принимать на вход целое число, а возвращать массив случайных целых чисел от 0 до переданного числа. Длина массива должна быть в 2 раза меньше переданного числа. //
 
-function getRandomArrNumbers () {
-
+const getRandomArrNumbers = (number) => {
+    let resultArray = [];
+    for (i = 1; i <= (number / 2); i++) {
+        resultArray.push(Math.round(Math.random() * number));
+    }
+    return resultArray;
 }
+console.log(getRandomArrNumbers(12));
+
 
 // 7. Напишите функцию, которая на вход принимает 2 целых числа, а в качестве результата возвращает случайное целое число в этом диапазоне.//
 
