@@ -16,9 +16,9 @@ function gameSeasons() {
    seasons(monthNumber);
 } 
 
+
 let array = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
  let result = array.sort(() => Math.random() - 0.5);
-
 
 function rememberWords(){
 
