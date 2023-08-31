@@ -6,15 +6,10 @@ console.log(string.toUpperCase());
 
 // 2. Создайте функцию, которая в качестве параметров принимает массив строк и строку. Возвращать данная функция должна новый массив, содержащий только те элементы переданного массива, которые начинаются с переданной строки. Регистр символов не должен влиять. //
 
-const animals = ['кошка', 'кит', 'комар', 'носорог'];
-const search = 'ко';
-
-animals.forEach((animals) => {
-    if (animals.toLowerCase().includes(search.toLowerCase())){
-        console.log(animals);
-    }
-
-});
+function searchStart(arr, result) {
+    return arr.filter(el => el.toLowerCase().startsWith(result.toLowerCase()));
+}
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
 
 // 3. Округлите число 32.58884 // 
 // меньшее целое :// 
@@ -46,7 +41,7 @@ console.log(minmax(52, 53, 49, 77, 21, 32));
 // 5. Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10. // 
 
 function RandomInt(minValue, maxValue){
-    return Math.round(Math.random() * (maxValue - minValue));
+    return Math.floor(Math.random() * (maxValue - minValue) + 1);
 }
 
 console.log(RandomInt(1, 10));
@@ -56,7 +51,7 @@ console.log(RandomInt(1, 10));
 const getRandomArrNumbers = (number) => {
     let resultArray = [];
     for (i = 1; i <= (number / 2); i++) {
-        resultArray.push(Math.round(Math.random() * number));
+        resultArray.push(Math.floor(Math.random() * number));
     }
     return resultArray;
 }
@@ -79,7 +74,7 @@ console.log(myDate);
 // 9. Создайте переменную currentDate и сохраните в нее текущую дату. Выведите дату, которая наступит через 73 дня после текущей.
 
 let currentDate = new Date (); 
-currentDate.setDate(73);
+currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 // 10. Написать функцию, которая на вход принимает дату, а возвращает ее отображение в виде: 
@@ -88,8 +83,8 @@ console.log(currentDate);
 // Время, которое будет выведено, также хранится в объекте Date.
 
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+"Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
 
 let thisDate = new Date ();
 let minute = myDate.getMinutes(); 

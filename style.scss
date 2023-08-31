@@ -132,8 +132,8 @@
     background-color:#000915; 
     height: 800px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 135px;
     
 }
 .first_game_img {
@@ -184,11 +184,10 @@
 
 .second_game {
     background: #000915;
-    width: 1440px;
     height: 800px;
     flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
+    gap: 135px;
     flex-wrap: wrap;
 }
 .second_game_name {
