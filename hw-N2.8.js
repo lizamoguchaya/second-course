@@ -20,31 +20,43 @@ const people = [
 
 // 2. //
 function isPositive(number) {
-   return number > 0; 
+   if (number > 0) {
+       return number;
+   } else {
+       return null;
    }
-   function isMale(genderOfPeople) {
-   return genderOfPeople.gender === 'male'; 
+}
+
+function isMale(string) {
+   if (string.gender === 'male') {
+       return string;
+   } else {
+       return null;
    }
-   function filter(array, ruleFunction) {
-      return array.map((item) =>{
-         if(ruleFunction(item)){
-            return item;
-         }
-      }).filter((item) => {
-         return item !== undefined;
-      });
+}
+
+function filter(arr, ruleFunction) {
+   const output = [];
+
+   for (let i = 0; i < arr.length; i++) {
+       if (ruleFunction(arr[i]) !== null) {
+           output.push(ruleFunction(arr[i]));
+       }
    }
-   
-   console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
-   
-   const genderOfPeople = [
-      {name: 'Глеб', gender: 'male'},
-      {name: 'Анна', gender: 'female'},
-      {name: 'Олег', gender: 'male'},
-      {name: 'Оксана', gender: 'female'}
-   ];
-   
-   console.log(filter(genderOfPeople, isMale));
+
+   return output;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const genderOfPeople = [
+   { name: 'Глеб', gender: 'male' },
+   { name: 'Анна', gender: 'female' },
+   { name: 'Олег', gender: 'male' },
+   { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(genderOfPeople, isMale));
  
     
 
