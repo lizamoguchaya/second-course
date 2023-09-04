@@ -23,7 +23,7 @@ function isPositive(number) {
    if (number > 0) {
        return number;
    } else {
-       return null;
+       return false;
    }
 }
 
@@ -31,7 +31,7 @@ function isMale(string) {
    if (string.gender === 'male') {
        return string;
    } else {
-       return null;
+       return false;
    }
 }
 
@@ -39,7 +39,7 @@ function filter(arr, ruleFunction) {
    const output = [];
 
    for (let i = 0; i < arr.length; i++) {
-       if (ruleFunction(arr[i]) !== null) {
+       if (ruleFunction(arr[i]) !== false) {
            output.push(ruleFunction(arr[i]));
        }
    }
